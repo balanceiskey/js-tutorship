@@ -14,15 +14,15 @@
 1. Operators
 	1. Numbers
     1. [Basic arithmetic](#basic-arithmetic)
-		1. [Mod, aka %](#)
+		1. [Mod, aka %](#mod-aka-)
 	1. Strings
-		1. [Concatenation, aka +](#)
+		1. [Concatenation, aka +](#concatenation-aka-)
     1. [length](#length)
-		1. [Character-at-index, aka [n]](#)
+		1. [Character-at-index, aka [n]](#character-at-index-aka-n)
 	1. Booleans
-		1. [not, aka !](#)
-		1. [and, aka &&](#)
-		1. [or, aka ||](#)
+		1. [not, aka !](#not-aka-)
+		1. [and, aka &&](#and-aka-)
+		1. [or, aka ||](#or-aka-)
     1. [Combining boolean operators](#combining-boolean-operators)
 
 ## Data Types
@@ -35,7 +35,7 @@ Programmming can be boiled down to one concept: Doing things with data. Data
 can be categorized by how it looks and how it behaves. For instance, a
 combination of digits would be categorized as a number, or an arbitrary day,
 month and year would be categorized as a date. A category of data that looks and
-behaves in a common way is referred to as a *type*.
+behaves in a common way is referred to as a **type**.
 
 #### Why are types important
 
@@ -54,8 +54,8 @@ The term data usually refers to large groupings of things, such as a spreadsheet
 or a list of tweets. While these groupings may be data types in and of
 themselves, they're really composed of several different smaller datatypes. A
 calendar is made up of dates, a bank statement is made up of charges, each of
-which is a date and a number. The smallest units of data - dates, numbers, etc.
-- are referred to as *primitive types*.
+which is a date and a number. The smallest units of data (dates, numbers, etc.)
+are referred to as **primitive types**.
 
 ### JavaScript Primitive Types
 
@@ -97,21 +97,21 @@ its base, JavaScript will assume the number is in octal.
 #### string
 
 A grouping of one or more letters, surrounded by quotes, is referred to in
-programming as a *string*. A string can be made up of any combination of
+programming as a **string**. A string can be made up of any combination of
 letters, spaces, and punctuation marks.
 ```
 "Hello, 日本!";
 ```
 
 A single letter, space, or punctuation mark is commonly referred to as a
-*character*. Some programming languages treat characters as a different type
+**character**. Some programming languages treat characters as a different type
 than strings, but in JavaScript, all characters are strings.
 ```
 "a";
 ```
 
 Some characters have special meanings to computers, and can only be represented
-by what is called an *escape sequence*. In JavaScript, this usually means
+by what is called an **escape sequence**. In JavaScript, this usually means
 placing a frontslash in front of the character. Note that the frontslash itself
 is one such special character, thus the JavaScript string representation of
 a frontslash is actually two frontslashes!
@@ -217,7 +217,7 @@ will become quickly apparent when attempting arithmetic with decimals.
 
 When performing division, sometimes you may only be interested in the remainder.
 Most programming languages offer an operator that will give you the remainder of
-division, called *modulo* or *mod* for short. This operation is usually
+division, called **modulo** or mod for short. This operation is usually
 represented by the `%` symbol.
 ```
 13 % 3;
@@ -235,7 +235,7 @@ even. The modulo operator makes this easy.
 #### Concatenation, aka +
 
 While you can't perform arithmetic with strings, adding two strings together,
-also known as *concatenation* or *concat*, is easy.
+also known as **concatenation** or concat, is easy.
 ```
 'Hello,' + " " + 'world!';
 ```
@@ -327,7 +327,7 @@ If any of the individual boolean portions evaluates to `false`, then the entire
 statement will evaluate to `false`. In JavaScript and some other programming
 languages, as soon as a `false` value is encountered, the program will not look
 at any of the values to the right of the `false` value. This is commonly
-referred to as *short circuiting*.
+referred to as **short circuiting**.
 ```
 true && false;
 false && true;
