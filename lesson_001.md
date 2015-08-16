@@ -2,28 +2,28 @@
 
 ## Contents
 1. Data Types
-	1. Introduction
-		1. [What is a type](#what-is-a-type)
-		1. [Why are types important](#why-are-types-important)
-		1. [What is a primitive type](#what-is-a-primitive-type)
-	1. JavaScript Primitive Types
-		1. [number](#number)
-		1. [string](#string)
-		1. [boolean](#boolean)
-		1. [undefined and null](#undefined-and-null)
+    1. Introduction
+        1. [What is a type](#what-is-a-type)
+        1. [Why are types important](#why-are-types-important)
+        1. [What is a primitive type](#what-is-a-primitive-type)
+    1. JavaScript Primitive Types
+        1. [number](#number)
+        1. [string](#string)
+        1. [boolean](#boolean)
+        1. [undefined and null](#undefined-and-null)
 1. Operators
-	1. Numbers
-    1. [Basic arithmetic](#basic-arithmetic)
-		1. [Mod, aka %](#mod-aka-)
-	1. Strings
-		1. [Concatenation, aka +](#concatenation-aka-)
-    1. [length](#length)
-		1. [Character-at-index, aka [n]](#character-at-index-aka-n)
-	1. Booleans
-		1. [not, aka !](#not-aka-)
-		1. [and, aka &&](#and-aka-)
-		1. [or, aka ||](#or-aka-)
-    1. [Combining boolean operators](#combining-boolean-operators)
+    1. Numbers
+        1. [Basic arithmetic](#basic-arithmetic)
+        1. [Mod, aka %](#mod-aka-)
+    1. Strings
+        1. [Concatenation, aka +](#concatenation-aka-)
+        1. [length](#length)
+        1. [Character-at-index, aka [n]](#character-at-index-aka-n)
+    1. Booleans
+        1. [not, aka !](#not-aka-)
+        1. [and, aka &&](#and-aka-)
+        1. [or, aka ||](#or-aka-)
+        1. [Combining boolean operators](#combining-boolean-operators)
 
 ## Data Types
 
