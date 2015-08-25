@@ -23,7 +23,7 @@ Let’s break this down into bits.
 
 ### `var`
 
-Remember, JavaScript has special words reserved by the language called [keywords]. `var` is one of those keywords and we use it to ‘declare’ a variable.
+Remember, JavaScript has special words reserved by the language called [keywords](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar). `var` is one of those keywords and we use it to ‘declare’ a variable.
 
 ### `x`
 
