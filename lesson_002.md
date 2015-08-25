@@ -39,11 +39,11 @@ This is our value. It’s the thing we’re trying to store for use later.
 
 ### `;`
 
-Don’t forget the semicolon!
+Don’t forget the semicolon! A semicolon lets JavaScript know we've reached the end of a statement.
 
 ### Put it together.
 
-What we get is `var x = 1;`. Somewhat confusingly, you’ll often hear developers say this as `1 is assigned to x`.
+What we get is `var x = 1;`. You’ll often hear developers say this as `1 is assigned to x`.
 
 ## Variable Use
 
@@ -64,6 +64,7 @@ What about if it’s a string or boolean?
 var a = 'A string.';
 a + ' With some other stuff.';
 a.length;
+a[3];
 
 var b = true;
 !b; // false
@@ -151,7 +152,7 @@ All of these are valid:
 ```javascript
 var a = 1;
 var $ = 2;
-var superMan = 'some string';
+var superMan = 'Clark Kent';
 var cat5 = true;
 var $someOtherThing = 'okay, you’re probably getting the picture';
 var _oBnOx1i0us$_ = "Don’t do this. Just don’t.";
