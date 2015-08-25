@@ -82,6 +82,59 @@ a * b; // 12
 a / b; // 0.75
 ```
 
+### Variable Reassignment
+
+
+#### Basics
+
+Things can get a little scary when we start reassigning variables, but fret not adventurer, we're here to help. Let's start with this:
+
+```
+var a = 1;
+a = 2;
+```
+
+You'll notice something interesting here. When `a` is initially declared we use the `var` keyword. When it's assigned a second time we no longer need `var` since the variable has already been declared.
+
+What is `a` now? 2.
+
+```
+a; // 2
+```
+
+We can continue in this way:
+
+```
+a = 3;
+a = 'hello';
+a = true;
+```
+
+What's `a` now? `true`.
+
+#### Hairier
+
+Okay, let's make things a little more interesting. What happens when one variable is assigned to another variable that's in turn assigned to a primitive? (IMPORTANT: We're talking strictly about primitives at the moment.)
+
+```
+var a = 1;
+var b = a;
+```
+
+In this case, `1` is assigned to `a` and `a` is assigned to `b`.
+
+If we change `a`...
+
+```
+a = 5;
+```
+
+What's `b`? In this case `b` remains `1`.
+
+You can think of modifying variables in this case as splitting from a tree. Both `a` and `b` begin life associated with the value `1`. But once `a` takes on a new value `5`, `b` remains associated with `1`.
+
+Again, it's worth emphasizing. This is 1/2 of how assignment works and it only applies to primitives. We'll talk later about what happens when we're not dealing with primitives.
+
 ## Variable Gotchas
 
 Declaring a variable is relatively simple but it comes packed with some gotchas.
@@ -116,7 +169,7 @@ var & = 'sorry, nope';
 
 There’s also one other declaration not allowed. You can’t do the following:
 
-```
+```javascript
 var 12 = theNumberTwelve;
 ```
 
@@ -126,8 +179,8 @@ Assignment always happens right-to-left, so we’ll always see the keyword `var`
 
 We’re not going to talk about what scope is right now, but know that this…
 
-```
+```javascript
 x = 1;
 ```
 
-…is possible. Note the `var` keyword is nowhere to be seen. Don’t ever do this. We will explain why at another time.
+…is possible. Note the `var` keyword is nowhere to be seen. Don’t ever do this when declaring a variable. We will explain why at another time.
