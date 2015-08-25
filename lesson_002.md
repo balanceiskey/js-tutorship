@@ -89,7 +89,7 @@ a / b; // 0.75
 
 Things can get a little scary when we start reassigning variables, but fret not adventurer, we're here to help. Let's start with this:
 
-```
+```javascript
 var a = 1;
 a = 2;
 ```
@@ -98,13 +98,13 @@ You'll notice something interesting here. When `a` is initially declared we use 
 
 What is `a` now? 2.
 
-```
+```javascript
 a; // 2
 ```
 
 We can continue in this way:
 
-```
+```javascript
 a = 3;
 a = 'hello';
 a = true;
@@ -116,7 +116,7 @@ What's `a` now? `true`.
 
 Okay, let's make things a little more interesting. What happens when one variable is assigned to another variable that's in turn assigned to a primitive? (IMPORTANT: We're talking strictly about primitives at the moment.)
 
-```
+```javascript
 var a = 1;
 var b = a;
 ```
@@ -125,7 +125,7 @@ In this case, `1` is assigned to `a` and `a` is assigned to `b`.
 
 If we change `a`...
 
-```
+```javascript
 a = 5;
 ```
 
