@@ -61,8 +61,8 @@ x % 2; // 1
 What about if it’s a string or boolean?
 
 ```javascript
-var a = ‘A string.’;
-a + ‘ With some other stuff.’;
+var a = 'A string.';
+a + ' With some other stuff.';
 a.length;
 
 var b = true;
@@ -98,10 +98,10 @@ All of these are valid:
 ```javascript
 var a = 1;
 var $ = 2;
-var superMan = ‘some string’;
+var superMan = 'some string';
 var cat5 = true;
-var $someOtherThing = ‘okay, you’re probably getting the picture’.;
-var _oBnOx1i0us$_ = “Don’t do this. Just don’t.”;
+var $someOtherThing = 'okay, you’re probably getting the picture';
+var _oBnOx1i0us$_ = "Don’t do this. Just don’t.";
 ```
 
 These are not valid:
@@ -109,7 +109,7 @@ These are not valid:
 ```javascript
 var 1 = 2;
 var 1abc = false;
-var & = ‘sorry, nope’;
+var & = 'sorry, nope';
 ```
 
 ### Right-to-left
