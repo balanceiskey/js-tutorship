@@ -158,6 +158,8 @@ var $someOtherThing = 'okay, you’re probably getting the picture';
 var _oBnOx1i0us$_ = "Don’t do this. Just don’t.";
 ```
 
+You shouldn't ever do that last one. To paraphrase Don Knuth, good names should be written with the intention of communicating some purpose to humans. I'd add that typically these humans are your fellow developers so do them a favor and include variable names they'll understand.
+
 These are not valid:
 
 ```javascript
