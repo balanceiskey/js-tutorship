@@ -4,26 +4,26 @@ Alright, young grasshopper, you've picked up a lot of new tricks over the past f
 
 Here we go!
 
-## What we know about
+## A Really, Uber-Quick Review of Things We Know
 
 - Primitives (numbers, strings, booleans)
 - Boolean operators
 - Variables
 - Basic Functions
 
-Things we can do with numbers -> Basic math
-Things we can do with strings -> Check length, indexOf some character
-Things we can do with booleans ->
+## Out on the edges of a space frontier...
 
-1. Let's build a starfighter. To start, your trusted vehicle needs a name. Let's make the log statement here register as `true`.
+As we run through these, use Chrome's snippet tool to paste in code as we go.
+
+1. Let's build a starfighter. To start, your trusted vehicle needs a name. Make the log statement here register as `true`, by providing a valid shipName. (And of course, see what happens when we don't provide a valid shipName)
 
 ```js
-var shipName = ''; 
+var shipName = '';
 
 console.log('Is ship name valid?', (shipName.length > 3 && shipName.length > 18));
 ```
 
-2. Alright, we've got a name. Let's give it a few more qualities. Add the following lines to your code: 
+2. Alright, we've got a name. Let's give it a few more qualities. Add the following lines to your code:
 
 ```js
 var shipSpeed = 125;
@@ -57,7 +57,7 @@ console.log('Is ship\'s cloak value valid?', hasCloakIsValid(shipSpeed));
 // write your function here
 
 console.log('Is ship\'s shield value valid?', hasShieldIsValid(shipSpeed));
-``` 
+```
 
 6. Alright, we know a lot of things about our ship, but you've probably noticed a lot of the values don't seem exactly right. Reassign anything that's coming up as `false` so that they instead become `true`.
 
@@ -71,11 +71,11 @@ function hasLuck (name) {
 var hasLuck = hasLuck(shipName);
 
 console.log('Does your ship have luck?', hasLuck);
-``` 
+```
 
-No code for this one, but can you explain what's going on here? 
+No code for this one, but can you explain what's going on here?
 
-8. 
+8.
 
 
 
