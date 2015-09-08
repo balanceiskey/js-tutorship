@@ -19,63 +19,72 @@ As we run through these, use Chrome's snippet tool to paste in code as we go.
 
     ```js
     var shipName = '';
-    
-    console.log('Is ship name valid?', (shipName.length > 3 && shipName.length > 18));
+
+    // make this true, by setting the name above
+    console.log('Is ship name valid?', (shipName.length > 3 && shipName.length < 18));
     ```
 
 2. Alright, we've got a name. Let's give it a few more qualities. Add the following lines to your code:
 
     ```js
     var shipSpeed = 125;
-    var hasCloak = true;
-    var hasShield = false;
-    
+
     console.log('current ship speed', shipSpeed);
-    console.log('ship has cloak', hasCloak);
-    console.log('ship has shield', hasShield);
     ```
 
-3. We need to know if the values we provided for `shipSpeed`, `hasCloak` and `hasShield` are any good. Let's start by writing a function called `shipSpeedIsValid`. It should take as parameters a speed and return `true` if the speed provided is *greater than* `4.2` and *less than or equal to* `15`. It's okay if the ship speed is currently invalid.
+3. We need to know if the values we provided for `shipSpeed`are any good. Let's start by writing a function called `shipSpeedIsValid`. It should take as parameters a speed and return `true` if the speed provided is *greater than* `2.2` and *less than or equal to* `15`.
 
     ```js
     // write your function here:
-    
+
     console.log('Is ship speed valid?', shipSpeedIsValid(shipSpeed));
     ```
 
-4. Similar to above, we want to know if `hasCloak` is valid, so let's write a function called `hasCloakIsValid` that checks if our `shipSpeed` is between 3 and 6 (inclusive on both counts). It's okay if the hasCloak value is currently invalid.
+Clearly, something's wrong with the speed we initially provided. Make our function return `true` by setting an appropriate value.
+
+4. We want to know if our fancy new starfighter is capable of cloaking, so let's write a function called `canCloak` that checks if our `shipSpeed` is between 3 and 6 (inclusive on both counts), and set the value to a variable.
 
     ```js
     // write your function here:
-    
-    console.log('Is ship\'s cloak value valid?', hasCloakIsValid(shipSpeed));
+
+    var shipCanCloak = canCloak(shipSpeed);
+    console.log('Can ship cloak?', shipCanCloak);
     ```
 
-5. Alright, we've got one last value we need to verify, `hasShield`. Write a function, `hasShieldIsValid` that checks that shipSpeed is greater than 6 and that hasCloak is `false`. It's okay if the hasShield value is currently invalid.
+5. Similar to above, we want to know if our starfighter can shield. Write a function, `canShield` that takes as parameters a speed and whether or not a ship can cloak, and then verifies that the provided speed is greater than 6 and that the ship cannot cloak.
 
     ```js
     // write your function here
-    
-    console.log('Is ship\'s shield value valid?', hasShieldIsValid(shipSpeed));
+
+    var shipCanShield = canShield(shipSpeed);
+
+    console.log('Can ship shield?', shipCanShield);
     ```
 
 6. Alright, we know a lot of things about our ship, but you've probably noticed a lot of the values don't seem exactly right. Reassign anything that's coming up as `false` so that they instead become `true`.
 
-7. Okay, I'm going to give you a freebie function. It looks like this:
+7. Every space encounter is a gamble. Write a function, `hasLuck`, that takes as a parameter a ship name, and checks whether the first letter is 'a', or the last letter is 'z', or that the length of the name is equal to 7. Note, we haven't officially done equality just yet, so I'll give you the first part for free.
 
     ```js
     function hasLuck (name) {
-        return (shipName[0].toLowerCase() === 'a' || shipName[shipName.length - 1].toLowerCase() === 'z');
+        return (shipName[0].toLowerCase() === 'a' //... fill in the rest);
     }
 
     var hasLuck = hasLuck(shipName);
-    
+
     console.log('Does your ship have luck?', hasLuck);
     ```
 
 No code for this one, but can you explain what's going on here?
 
-8.
+8. We know a lot about the starfighter now, but how does it stack up in a fight? Write a function, `printStarfighterStats`, that takes a total of 4 parameters: `shipOneName`, `shipOneSpeed`, `shipTwoName`, `shipTwoSpeed`. Use the name and speed of each ship to generate whether the ship can shield, whether the ship can cloak and whether the ship has luck (use the functions you wrote above), and print them out. Comment out the above `console.logs` to make things a little easier to navigate.
+
+    ```js
+    function printStarfighterStats (shipOneName, shipOneSpeed, shipTwoName, shipTwoSpeed) {
+        // write it out
+    }
+    ```
+
 
 
 
