@@ -68,7 +68,7 @@ Clearly, something's wrong with the speed we initially provided. Make our functi
         return (name[0].toLowerCase() === 'a' //... fill in the rest);
     }
 
-    var hasLuck = hasLuck(shipName);
+    var shipHasLuck = hasLuck(shipName);
 
     console.log('Does your ship have luck?', hasLuck);
     ```
