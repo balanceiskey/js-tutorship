@@ -65,7 +65,7 @@ Clearly, something's wrong with the speed we initially provided. Make our functi
 
     ```js
     function hasLuck (name) {
-        return (shipName[0].toLowerCase() === 'a' //... fill in the rest);
+        return (name[0].toLowerCase() === 'a' //... fill in the rest);
     }
 
     var hasLuck = hasLuck(shipName);
