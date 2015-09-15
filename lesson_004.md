@@ -73,8 +73,6 @@ Clearly, something's wrong with the speed we initially provided. Make our functi
     console.log('Does your ship have luck?', hasLuck);
     ```
 
-No code for this one, but can you explain what's going on here?
-
 7. We know a lot about the starfighter now, but how does it stack up in a fight? Write a function, `printStarfighterStats`, that takes a total of 4 parameters: `shipOneName`, `shipOneSpeed`, `shipTwoName`, `shipTwoSpeed`. Use the name and speed of each ship to generate whether the ship can shield, whether the ship can cloak and whether the ship has luck (use the functions you wrote above), and print them out. Comment out the above `console.logs` to make things a little easier to navigate.
 
     ```js
