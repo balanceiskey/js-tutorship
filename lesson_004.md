@@ -51,7 +51,7 @@ Clearly, something's wrong with the speed we initially provided. Make our functi
     console.log('Can ship cloak?', shipCanCloak);
     ```
 
-5. Similar to above, we want to know if our starfighter can shield. Write a function, `canShield` that takes as parameters a speed and whether or not a ship can cloak, and then verifies that the provided speed is greater than 6 and that the ship cannot cloak.
+5. Similar to above, we want to know if our starfighter can shield. Write a function, `canShield` that takes as a parameter the ship's speed, and then verifies that the provided speed is greater than 6 and that the ship cannot cloak.
 
     ```js
     // write your function here
