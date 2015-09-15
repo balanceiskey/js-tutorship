@@ -61,9 +61,7 @@ Clearly, something's wrong with the speed we initially provided. Make our functi
     console.log('Can ship shield?', shipCanShield);
     ```
 
-6. Alright, we know a lot of things about our ship, but you've probably noticed a lot of the values don't seem exactly right. Reassign anything that's coming up as `false` so that they instead become `true`.
-
-7. Every space encounter is a gamble. Write a function, `hasLuck`, that takes as a parameter a ship name, and checks whether the first letter is 'a', or the last letter is 'z', or that the length of the name is equal to 7. Note, we haven't officially done equality just yet, so I'll give you the first part for free.
+6. Every space encounter is a gamble. Write a function, `hasLuck`, that takes as a parameter a ship name, and checks whether the first letter is 'a', or the last letter is 'z', or that the length of the name is equal to 7. Note, we haven't officially done equality just yet, so I'll give you the first part for free.
 
     ```js
     function hasLuck (name) {
@@ -77,7 +75,7 @@ Clearly, something's wrong with the speed we initially provided. Make our functi
 
 No code for this one, but can you explain what's going on here?
 
-8. We know a lot about the starfighter now, but how does it stack up in a fight? Write a function, `printStarfighterStats`, that takes a total of 4 parameters: `shipOneName`, `shipOneSpeed`, `shipTwoName`, `shipTwoSpeed`. Use the name and speed of each ship to generate whether the ship can shield, whether the ship can cloak and whether the ship has luck (use the functions you wrote above), and print them out. Comment out the above `console.logs` to make things a little easier to navigate.
+7. We know a lot about the starfighter now, but how does it stack up in a fight? Write a function, `printStarfighterStats`, that takes a total of 4 parameters: `shipOneName`, `shipOneSpeed`, `shipTwoName`, `shipTwoSpeed`. Use the name and speed of each ship to generate whether the ship can shield, whether the ship can cloak and whether the ship has luck (use the functions you wrote above), and print them out. Comment out the above `console.logs` to make things a little easier to navigate.
 
     ```js
     function printStarfighterStats (shipOneName, shipOneSpeed, shipTwoName, shipTwoSpeed) {
