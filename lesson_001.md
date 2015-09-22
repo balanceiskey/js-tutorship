@@ -382,18 +382,18 @@ true || !false || true;
 #### Combining boolean operators
 
 It is common to combine the `&&` and `||` operators in a single statement. If no
-parentheses are used, the operators will start by evaluating all && statements
-first, from left to right, followed by || statements again from left to right.
+parentheses are used, the operators will start by evaluating all `&&` statements
+first, from left to right, followed by `||` statements again from left to right.
 For example:
 ```
 true || false && true && false;
 ```
-We start by evaluating the left-most && statement, `false && true`, which
+We start by evaluating the left-most `&&` statement, `false && true`, which
 evaluates to `false` resulting in the following simplified expression:
 ```
 true || false && false;
 ```
-The next && statement is `false && false`, which evaluates to false, resulting
+The next `&&` statement is `false && false`, which evaluates to false, resulting
 in the following simplified expression:
 ```
 true || false;
